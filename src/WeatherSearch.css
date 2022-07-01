@@ -1,0 +1,15 @@
+a,
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.suggested-cities {
+  list-style: none;
+  margin-top: 40px;
+}
+
+.suggested-city {
+  display: inline;
+  margin: 10px;
+}
