@@ -5,6 +5,17 @@ header {
 h1 {
   font-size: 45px;
 }
+
+footer {
+  text-align: center;
+  font-size: 18px;
+}
+
+footer a {
+  color: rgb(45, 45, 141);
+  font-weight: bold;
+}
+
 .App {
   padding-top: 80px;
 }
@@ -13,6 +24,7 @@ h1 {
   width: 700px;
   border: 1px solid black;
   border-radius: 5px;
+  padding: 30px 50px;
 }
 
 .App h1,

@@ -1,15 +1,29 @@
-a,
-a:hover {
-  color: black;
-  text-decoration: none;
+.WeatherInfo ul {
+  margin: 0;
+  padding: 0;
 }
 
-.suggested-cities {
+.WeatherInfo li {
   list-style: none;
-  margin-top: 40px;
+  font-size: 20px;
+  line-height: 1;
+  color: #505050;
 }
 
-.suggested-city {
-  display: inline;
-  margin: 10px;
+.WeatherInfo li a {
+  text-decoration: none;
+  color: rgb(45, 45, 141);
+}
+
+.WeatherInfo h2 {
+  font-size: 60px;
+  margin: 0;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.WeatherTemperature .temperature {
+  font-size: 60px;
+  line-height: 1.5;
+  color: black;
 }
