@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
+import DailyForecast from "./DailyForecast";
 
 import "./WeatherSearch.css";
 
@@ -13,16 +14,18 @@ export default function WeatherSearch(props) {
     setWeather({
       loaded: true,
       city: response.data.name,
+      coordinates: response.data.coord,
       date: new Date(response.data.dt * 1000),
       temperature: Math.round(response.data.main.temp),
       wind: Math.round(response.data.wind.speed),
       humidity: response.data.main.humidity,
       description: response.data.weather[0].description,
+      iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
     });
   }
 
   function getApi() {
-    let apiKey = "8faf1e22ac6d107f05e8ab59a4150451";
+    let apiKey = "870d37476e57ead9d0bfa958566f3e94";
     let units = "metric";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
 
@@ -68,6 +71,7 @@ export default function WeatherSearch(props) {
       <div>
         {form}
         <WeatherInfo info={weather} />
+        <DailyForecast coords={weather.coordinates} />
       </div>
     );
   } else {

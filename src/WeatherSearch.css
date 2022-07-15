@@ -22,7 +22,7 @@
   line-height: 1.5;
 }
 
-.WeatherTemperature .temperature {
+.WeatherInfo .temperature {
   font-size: 60px;
   line-height: 1.5;
   color: black;
