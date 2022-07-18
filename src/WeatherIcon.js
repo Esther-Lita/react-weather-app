@@ -2,7 +2,6 @@ import React from "react";
 import * as Icon from "react-feather";
 
 export default function WeatherIcon(props) {
-  let color = props.color;
   let size = props.size;
 
   const codeMapping = {
