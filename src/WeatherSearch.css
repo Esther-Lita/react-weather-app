@@ -1,18 +1,16 @@
+:root {
+  --shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075), 0 2px 2px hsl(0deg 0% 0% / 0.075),
+    0 4px 4px hsl(0deg 0% 0% / 0.075), 0 8px 8px hsl(0deg 0% 0% / 0.075),
+    0 16px 16px hsl(0deg 0% 0% / 0.075);
+}
+
 .WeatherInfo ul {
-  margin: 0;
   padding: 0;
+  margin: 20px 0;
 }
 
 .WeatherInfo li {
   list-style: none;
-  font-size: 20px;
-  line-height: 1;
-  color: #505050;
-}
-
-.WeatherInfo li a {
-  text-decoration: none;
-  color: rgb(45, 45, 141);
 }
 
 .WeatherInfo h2 {
@@ -20,10 +18,40 @@
   margin: 0;
   text-align: center;
   line-height: 1.5;
+  color: white;
+}
+
+.WeatherInfo .weather-description {
+  font-size: 20px;
+  line-height: 1;
+  color: white;
 }
 
 .WeatherInfo .temperature {
   font-size: 60px;
   line-height: 1.5;
-  color: black;
+}
+
+.btn-outline-warning,
+.btn-outline-warning:hover {
+  color: #f2df3a !important;
+  outline: #f2df3a;
+  background-color: transparent !important;
+  border: 1px solid #f2df3a;
+}
+
+.btn-outline-warning:focus {
+  box-shadow: 0 0 0 0.25rem rgb(99 80 24 / 57%);
+}
+
+.form-control,
+.form-control:focus {
+  color: #dee2e6;
+  background-color: transparent !important;
+}
+
+.form-control:focus {
+  border-color: #f2df3a;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(99 80 24 / 57%);
 }

@@ -9,7 +9,7 @@ export default function WeatherInfo(props) {
   }
   return (
     <div className="WeatherInfo">
-      <ul className="text-center all-description">
+      <ul className="all-description">
         <div className="row">
           <div className="col-6">
             <li className="date weather-description">

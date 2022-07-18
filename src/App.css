@@ -12,24 +12,31 @@ footer {
 }
 
 footer a {
-  color: rgb(45, 45, 141);
+  color: #f2df3a;
   font-weight: bold;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #f2df3a;
 }
 
 .App {
   margin: 80px auto;
-  max-width: 650px;
+  max-width: 700px;
+  color: #f6f6f6;
 }
 
 .App-container {
-  width: 700px;
-  border: 1px solid black;
+  backdrop-filter: blur(8px); /* Chrome and Opera */
+  box-shadow: inset 0 0 0 250px rgba(255, 255, 255, 0.08);
+  width: 650px;
   margin: 0;
-  border-radius: 5px;
+  border-radius: 20px;
   padding: 30px 50px;
 }
 
-.App h1,
 .App form {
   text-align: center;
 }
