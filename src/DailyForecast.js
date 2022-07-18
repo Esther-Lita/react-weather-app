@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
 import DailyForecastDay from "./DailyForecastDay";
-import * as Icon from "react-feather";
+
 
 export default function DailyForecast(props) {
   const [ready, setReady] = useState(false);
@@ -33,7 +33,7 @@ export default function DailyForecast(props) {
               return (
                 <div className="col" key={index}>
                   <DailyForecastDay data={dailyForecast} />
-                  <Icon.Sun />
+                 
                 </div>
               );
             } else {
