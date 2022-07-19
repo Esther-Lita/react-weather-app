@@ -5,3 +5,10 @@ body {
   background-size: cover;
   background-position: center;
 }
+
+@media (max-width: 580px) {
+  body {
+    background-image: url(./images/smoke-standing.jpg);
+    
+  }
+}

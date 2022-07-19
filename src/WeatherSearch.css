@@ -98,7 +98,7 @@
   right: -3px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 580px) {
   .WeatherInfo {
     margin: 20px 0;
   }
