@@ -9,6 +9,5 @@ body {
 @media (max-width: 580px) {
   body {
     background-image: url(./images/smoke-standing.jpg);
-    
   }
 }
