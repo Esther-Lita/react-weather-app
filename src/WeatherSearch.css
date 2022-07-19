@@ -41,6 +41,7 @@
   font-size: 20px;
   line-height: 1.5;
   padding: 20px 0 10px;
+  margin-left: 70px;
 }
 
 .WeatherInfo .description {
@@ -95,4 +96,45 @@
   position: relative;
   top: -18px;
   right: -3px;
+}
+
+@media (max-width: 500px) {
+  .WeatherInfo {
+    margin: 20px 0;
+  }
+
+  .WeatherInfo .all-description {
+    font-size: 17px;
+    margin-left: 30px;
+  }
+
+  .WeatherInfo .description {
+    box-shadow: none;
+    padding: 20px 0;
+  }
+
+  .WeatherInfo h2 {
+    font-size: 45px;
+  }
+
+  .WeatherInfo .temperature {
+    font-size: 30px;
+    line-height: 1.5;
+  }
+
+  .Date .hour,
+  .WeatherInfo .humidity,
+  .WeatherInfo .wind {
+    font-family: var(--numbers-font);
+  }
+
+  .WeatherInfo .WeatherIcon {
+    position: relative;
+    margin-right: 15px;
+    top: -10px;
+  }
+
+  .WeatherInfo .unit {
+    font-size: 8px;
+  }
 }

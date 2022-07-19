@@ -11,13 +11,13 @@ export default function WeatherInfo(props) {
     <div className="WeatherInfo">
       <ul className="all-description">
         <div className="row">
-          <div className="col-sm-5 description">
+          <div className="col-4 description">
             <li className="date ">
               <Date date={props.info.date} />
             </li>
             <li className="text-capitalize "> {props.info.description}</li>
           </div>
-          <div className="col-sm-5 description">
+          <div className="col-4 description">
             <li>
               Humidity: <span className="humidity">{props.info.humidity}</span>%
             </li>

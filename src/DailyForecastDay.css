@@ -33,3 +33,14 @@
 .DailyForecastDay .temp-max {
   color: var(--heading-color);
 }
+
+@media (max-width: 580px) {
+  .DailyForecast {
+    padding: 0;
+  }
+
+  .DailyForecastDay {
+    padding: 5px 15px;
+    font-size: 14px;
+  }
+}

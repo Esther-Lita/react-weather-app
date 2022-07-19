@@ -43,3 +43,19 @@ footer a:hover {
 .App form {
   text-align: center;
 }
+
+@media (max-width: 580px) {
+  footer {
+    font-size: 13px;
+  }
+
+  .App {
+    margin: 50px auto 100px;
+    max-width: 500px;
+  }
+
+  .App-container {
+    width: 380px;
+    margin: 0;
+  }
+}
