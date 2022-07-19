@@ -22,8 +22,11 @@ export default function Date(props) {
     minutes = `0${minutes}`;
   }
   return (
-    <div>
-      {day} {hours}:{minutes}
+    <div className="Date">
+      {day}{" "}
+      <span className="hour">
+        {hours}:{minutes}
+      </span>
     </div>
   );
 }

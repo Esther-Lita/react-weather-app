@@ -1,6 +1,14 @@
+:root {
+  --yellow-shadow: 0 0 0 0.25rem rgb(99 80 24 / 57%);
+  --primary-font-family: "Playfair Display", serif;
+  --numbers-font: "Cormorant Infant", serif;
+  --heading-color: #fefbf6;
+  --primary-color: #b4e7e9;
+  --secondary-color: #f2df3a;
+}
+
 .DailyForecast {
   padding: 20px 35px;
-  border-radius: 20px;
 }
 
 .DailyForecastDay {
@@ -9,6 +17,19 @@
     0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
     0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
   border-radius: 20px;
-  font-size: 13px;
+  font-size: 17px;
+  line-height: 1.5;
   text-align: center;
+}
+
+.DailyForecast-Temps {
+  font-family: var(--numbers-font);
+}
+
+.DailyForecast-day {
+  font-family: var(--primary-font-family);
+}
+
+.DailyForecastDay .temp-max {
+  color: var(--heading-color);
 }

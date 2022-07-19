@@ -29,7 +29,7 @@ export default function DailyForecastDay(props) {
 
       <div className="DailyForecast-Temps mt-1">
         <span className="temp-min">{minTemp()} </span>
-        <span className="temp-min">{maxTemp()}</span>
+        <span className="temp-max">{maxTemp()}</span>
       </div>
     </div>
   );

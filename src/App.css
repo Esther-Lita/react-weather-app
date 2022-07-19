@@ -1,36 +1,39 @@
-header {
-  padding: 30px;
-}
-
-h1 {
-  font-size: 45px;
+:root {
+  --yellow-shadow: 0 0 0 0.25rem rgb(99 80 24 / 57%);
+  --primary-font-family: "Playfair Display", serif;
+  --numbers-font: "Cormorant Infant", serif;
+  --heading-color: #fefbf6;
+  --primary-color: #b4e7e9;
+  --secondary-color: #f2df3a;
 }
 
 footer {
+  font-family: var(--numbers-font);
   text-align: center;
   font-size: 18px;
 }
 
 footer a {
-  color: #f2df3a;
+  color: var(--secondary-color);
   font-weight: bold;
   text-decoration: none;
 }
 
 footer a:hover {
   text-decoration: underline;
-  color: #f2df3a;
+  color: var(--secondary-color);
 }
 
 .App {
   margin: 80px auto;
   max-width: 700px;
-  color: #f6f6f6;
+  font-family: var(--primary-font-family);
+  color: var(--primary-color);
 }
 
 .App-container {
   backdrop-filter: blur(8px); /* Chrome and Opera */
-  box-shadow: inset 0 0 0 250px rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 0 0 300px rgba(255, 255, 255, 0.08);
   width: 650px;
   margin: 0;
   border-radius: 20px;
