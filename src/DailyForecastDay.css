@@ -34,9 +34,9 @@
   color: var(--heading-color);
 }
 
-@media (max-width: 580px) {
+@media (max-width: 700px) {
   .DailyForecast {
-    padding: 0;
+    padding: auto;
   }
 
   .DailyForecastDay {
