@@ -49,14 +49,14 @@
     0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
     0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
   text-align: center;
-  padding: 20px auto;
-  margin: auto 22px;
+  padding: 20px 0;
+  margin: 0 22px;
   border-radius: 20px;
 }
 
 .WeatherInfo ul {
   padding: 0;
-  margin: 20px auto;
+  margin: 20px 0;
 }
 
 .WeatherInfo li {
@@ -65,7 +65,7 @@
 
 .WeatherInfo h2 {
   font-size: 60px;
-  margin: 0 auto;
+  margin: 0;
   text-align: center;
   line-height: 1.5;
   color: var(--heading-color);
@@ -98,9 +98,9 @@
   right: -3px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 580px) {
   .WeatherInfo {
-    margin: 20px auto;
+    margin: 20px 0;
   }
 
   .WeatherInfo .all-description {
@@ -111,7 +111,7 @@
 
   .WeatherInfo .description {
     box-shadow: none;
-    padding: 20px auto;
+    padding: 20px 0;
   }
 
   .WeatherInfo h2 {
